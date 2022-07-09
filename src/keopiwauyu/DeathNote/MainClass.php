@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace keopiwauyu\ExamplePlugin;
+namespace keopiwauyu\DeathNote;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;

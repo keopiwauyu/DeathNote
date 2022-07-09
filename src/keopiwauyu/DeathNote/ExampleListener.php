@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace keopiwauyu\ExamplePlugin;
+namespace keopiwauyu\DeathNote;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;

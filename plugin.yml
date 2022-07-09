@@ -1,19 +1,19 @@
 #name, main, version and api are required
-name: ExamplePlugin
-main: keopiwauyu\ExamplePlugin\MainClass
+name: DeathNote
+main: keopiwauyu\DeathNote\MainClass
 version: 0.0.1
 api: 4.0.0
 
 load: POSTWORLD
 author: 커피와 우유
-description: Example plugin showing the new API
-website: https://github.com/keopiwauyu/ExamplePlugin
+description: death note showing the new API
+website: https://github.com/keopiwauyu/DeathNote
 commands:
   example:
     description: Example command
     usage: "/example"
-    permission: exampleplugin.command.example
+    permission: DeathNote.command.example
 permissions:
-  exampleplugin.command.example:
+  DeathNote.command.example:
     description: "Allows the user to run the example command"
     default: true

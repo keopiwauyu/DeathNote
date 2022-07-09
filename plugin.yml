@@ -3,6 +3,8 @@ name: DeathNote
 main: keopiwauyu\DeathNote\MainClass
 version: 0.0.1
 api: 4.0.0
+depend:
+- PiggyCustomEnchants
 
 load: POSTWORLD
 author: 커피와 우유

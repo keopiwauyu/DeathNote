@@ -1,9 +1,8 @@
 {
-   "name": "keopiwauyu/DeathNote",
+   "name": "keopiwauyu/deathnote",
    "type": "library",
    "require": {
       "pocketmine/pocketmine-mp": "4.0.0",
-      "cortexpe/commando": "dev-master",
       "sylvrs/libmarshal": "^1.4",
       "sof3/await-generator": "^3.4",
       "sof3/await-std": "dev-master",
@@ -17,7 +16,7 @@
    },
    "autoload": {
       "psr-0": {
-         "keopiwauyu\\DeathNote\\": "src/keopiwauyu/DeathNote/"
+         "keopiwauyu\\DeathNote\\": "src"
       }
    },
    "autoload-dev": {

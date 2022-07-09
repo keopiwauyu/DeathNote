@@ -4,14 +4,21 @@ declare(strict_types=1);
 
 namespace keopiwauyu\DeathNote;
 
+use DaPigGuy\PiggyCustomEnchants\CustomEnchantManager;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
 class MainClass extends PluginBase{
+	private static self $instance;
+
+	public static function getInstance() : self {
+		return self::$instance;
+	}
 
 	public function onLoad() : void{
+	self::$instance = $this;
 		$this->getLogger()->info(TextFormat::WHITE . "I've been loaded!");
 	}
 
@@ -19,6 +26,8 @@ class MainClass extends PluginBase{
 		$this->getServer()->getPluginManager()->registerEvents(new ExampleListener($this), $this);
 		$this->getScheduler()->scheduleRepeatingTask(new BroadcastTask($this->getServer()), 120);
 		$this->getLogger()->info(TextFormat::DARK_GREEN . "I've been enabled!");
+
+        CustomEnchantManager::registerEnchantment(new DeathNoteEnchant($this, crc32(DeathNoteEnchant::NAME)));
 	}
 
 	public function onDisable() : void{
